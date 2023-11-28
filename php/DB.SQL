@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS newsletter
+(
+    eId int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    email varchar(255) NOT NULL
+);

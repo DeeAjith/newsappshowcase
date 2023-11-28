@@ -1,0 +1,195 @@
+:root{
+  --Wbetween:5rem;
+  --Hbetween:3rem;
+}
+@media (max-width:512px){
+  :root{
+    --Wbetween:0;
+    --Hbetween:1rem;
+  }
+}
+.wrapper {
+    /* margin: auto; */
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer form {
+    flex-grow: 1;
+    display: flex;
+  }
+  .footer input {
+    background: #f0f0f3;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 20px 25px;
+    flex-grow: 2;
+    color: #444;
+  }
+  .modal-footer input{
+    border-radius: 5px;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+.modal-footer input:hover{
+  background-image: -ms-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -moz-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -o-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #2780ff), color-stop(100, #6aa7fc));
+    background-image: -webkit-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: linear-gradient(to right, #2780ff 0%, #6aa7fc 100%);    border: none;
+}
+  .footer input::-webkit-input-placeholder {
+    color: #333;
+    text-transform: uppercase;
+  }
+  .footer input:focus {
+    outline: none;
+  }
+  .footer .btn-submit {
+    background-image: -ms-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -moz-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -o-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #2780ff), color-stop(100, #6aa7fc));
+    background-image: -webkit-linear-gradient(left, #2780ff 0%, #6aa7fc 100%);
+    background-image: linear-gradient(to right, #2780ff 0%, #6aa7fc 100%);    border: none;
+    padding: 20px;
+    border-radius: 0 5px 5px 0;
+    flex-grow: 1;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .footer .btn-submit:focus {
+    outline: none;
+  }
+
+.container1 {
+    overflow: hidden;
+}
+.container1 img{
+  position: absolute;
+  max-width: 50%;
+  opacity: .25;
+  z-index: -1;
+}
+@media (min-width: 786px) {
+  .container1 img{
+    position: absolute;
+    max-width: 50%;
+    opacity: 0.5;
+    margin-top: 5rem;
+    margin-left: 15rem;
+  }
+}
+@media (min-width: 1367px) {
+  .container1 img{
+    position: absolute;
+    max-width: 40%;
+    opacity: 0.5;
+    margin-top: 4rem;
+    margin-left: 15rem;
+  }
+}
+
+
+.container1 h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.container1 p{
+    text-align: center;
+}
+.counter-box {
+    display: block;
+    background: #fbfbfbb0;
+    padding: 40px 20px 37px;
+    text-align: center;
+    transition: all .25s ease;
+}
+
+.counter-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    color: #909090;
+    font-size: 18px;
+    font-weight: 500;
+    transition:all .25s ease;
+}
+
+.counter-box i {
+    font-size: 60px;
+    margin: 0 0 15px;
+    color: #d2d2d2
+}
+
+.counter {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    font-family:'Metropolis', sans-serif;
+    color: #666;
+    line-height: 28px;
+    transition:all .25s ease;
+}
+
+.counter-box:hover {
+  background: #2781ff;
+  opacity: 1;
+  transition: all .25s ease;
+}
+.counter-box:hover .counter {
+  font-size: 45px;
+  transition:all .25s ease;
+}
+.counter-box:hover p {
+  font-size: 20px;
+  transition:all .25s ease;
+}
+
+.counter-box:hover p,
+.counter-box:hover i,
+.counter-box:hover .counter {
+    color: #ffffff;
+}
+
+/*quote*/
+.right-quotation-mark {
+  position: absolute;
+  right: var(--Wbetween);
+  bottom: var(--Hbetween);
+}
+.left-quotation-mark {
+  position: absolute;
+  left: var(--Wbetween);
+  top: var(--Hbetween);
+}
+span.right-quotation-mark img {
+  width: 3rem !important;
+  height: auto !important;
+}
+span.left-quotation-mark img {
+  width: 3rem !important;
+  height: auto !important;
+  transform: rotateZ(180deg);
+}
+.testimonial-quote img{
+  position:absolute;
+  width:1.5rem ;
+  top: 35px;
+  left: 25px;
+  transform: rotate(180deg);
+  z-index: 3;
+}

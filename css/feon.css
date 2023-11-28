@@ -1,0 +1,85 @@
+#sync1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#sync1 .item {
+  background: #ffffff;
+  padding: 80px 0px;
+  margin: 0 5px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+#sync1 .item ~ p{
+    padding: 0;
+}
+#sync2 .item {
+  /* display: none; */
+  /* background: ; */
+  padding: 5px 0px;
+  margin: 5px;
+  color: rgb(44, 44, 44);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  font-size:12px;
+}
+.owl-theme .owl-dots{
+  display: inline-flex;
+  align-self: center;
+  margin-top: 20rem;
+  position: absolute;
+}
+@media (max-width:512px){
+  .owl-theme .owl-dots{
+    margin-top: 15rem;
+  }
+}
+#sync1 .item h1{
+  color: rgb(44, 44, 44);
+}
+#sync2 .item img {
+  filter: grayscale(.9);
+}
+#sync2 .current .item img {
+  filter: grayscale(0);
+}
+
+.owl-theme .owl-nav {
+  display: none;
+  /*default owl-theme theme reset .disabled:hover links */
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent;
+}
+#sync1.owl-theme {
+  position: relative;
+}
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+  width: 40px;
+  height:40px;
+  border-radius: 100%;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+}
+#sync1.owl-theme .owl-prev {
+  left: 10px;
+}
+#sync1.owl-theme .owl-next {
+  right: 10px;
+}
+

@@ -1,0 +1,356 @@
+/**
+
+====================================================================
+	Section Title
+====================================================================
+
+***/
+
+.sec-title{
+	position:relative;
+	z-index:1;
+}
+
+.sec-title .title{
+	position:relative;
+	color:#4b4b4b;
+	font-weight:700;
+	z-index:1;
+	font-size:50px;
+	display:inline-block;
+	text-transform:capitalize;
+	font-family: 'Karla', sans-serif;
+}
+
+.sec-title .title span{
+	position:relative;
+	color:#ffffff;
+}
+
+.sec-title h2{
+	position:relative;
+	color:#4b4b4b;
+	font-weight:700;
+	font-size:36px;
+	line-height:1.4em;
+	z-index:1;
+}
+
+.sec-title h2 span{
+	position:relative;
+}
+
+.sec-title h2 span:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	bottom:5px;
+	width:100%;
+	height:3px;
+	z-index:-1;
+	background-image: -ms-linear-gradient(left, #0084fd 0%, #6cd8ff 100%);
+    background-image: -moz-linear-gradient(left, #0084fd 0%, #6cd8ff 100%);
+    background-image: -o-linear-gradient(left, #0084fd 0%, #6cd8ff 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #0084fd), color-stop(100, #6cd8ff));
+    background-image: -webkit-linear-gradient(left, #0084fd 0%, #6cd8ff 100%);
+    background-image: linear-gradient(to right, #0084fd 0%, #6cd8ff 100%);
+}
+
+.sec-title .text{
+	position:relative;
+	font-size:16px;
+	line-height:1.9em;
+	color:#4b4b4b;
+	margin-top:10px;
+}
+
+.sec-title.centered{
+	text-align: center !important;
+}
+
+.sec-title.light .title{
+	color:#ffffff;
+}
+
+.sec-title.light h2{
+	color:#ffffff;
+}
+/**
+====================================================================
+	Screenshots Section
+====================================================================
+
+***/
+
+.screenshots-section{
+	position:relative;
+}
+
+.swiper-slider-area .container {
+	position: relative;
+}
+
+.swiper-wrapper{
+	height: 550px;
+	width: 320px;
+}
+
+
+.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+	position: relative;
+}
+
+.swiper-slide.swiper-slide-active {
+	border-radius: 35px;
+}
+
+.screen-mobile-image {
+	background-image: url('../image/iPhone_X.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	height: 35rem;
+	left: calc(50% + 0.5px);
+	position: absolute;
+	top: 24px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 18rem;
+	z-index: 2;
+	border-radius: 40px;
+}
+@media (max-width:420px) {
+	.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+		max-width: calc(420px*.5);	
+	}
+	.swiper-wrapper{
+		height: calc(630px*.8);
+		width: calc(320px*.8);
+	}
+	.screen-mobile-image {
+		height: calc(645px*.8);
+		width: calc(320px*.8);
+	}
+}
+@media (min-width:786px) {
+	.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+		max-width: calc(1366px*.5);	
+	}
+	.swiper-wrapper{
+		height: calc(630px*.6);
+		width: calc(320px*.6);
+	}
+	.screen-mobile-image {
+		height: calc(645px*.6);
+		width: calc(320px*.6);
+	}
+	.swiper-wrapper {
+		padding: 25px 0 40px;
+	}
+}
+@media (max-width:1366px) {
+	.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+		max-width: calc(1366px*.5);	
+	}
+	.swiper-wrapper{
+		height: calc(630px*.6);
+		width: calc(320px*.6);
+	}
+	.screen-mobile-image {
+		height: calc(645px*.6);
+		width: calc(320px*.58);
+	}
+	.swiper-wrapper {
+		padding: 25px 0 40px;
+	}
+}
+@media (min-width:1367px) {
+	.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+		max-width: calc(1366px*.6);	
+	}
+	.swiper-wrapper{
+		height: calc(630px*.65);
+		width: calc(320px*.65);
+	}
+	.screen-mobile-image {
+		height: calc(645px*.65);
+		width: calc(320px*.65);
+	}
+	.swiper-wrapper {
+		padding: 25px 0 40px;
+	}
+}
+/* @media (min-width:1367px) {
+	.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+		max-width: calc(992px*8);	
+	}
+	.swiper-wrapper{
+		height: 630px;
+		width: 320px;
+	}
+	.screen-mobile-image {
+		height: 645px;
+		width: 301px;
+	}
+	.swiper-wrapper {
+		padding: 25px 0 40px;
+	}
+} */
+.swiper-slide.swiper-slide-active {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.swiper-slide {
+	width: fit-content;
+	background-size: 100% 100% ;
+}
+.swiper-slide.swiper-slide-next {
+	-webkit-box-shadow: 30px 0px 20px rgba(0, 0, 0, 0.18);
+	box-shadow: 30px 0px 20px rgba(0, 0, 0, 0.18);
+}
+
+.swiper-slide.swiper-slide-prev {
+	-webkit-box-shadow: -30px 0px 20px rgba(0, 0, 0, 0.18);
+	box-shadow: -30px 0px 20px rgba(0, 0, 0, 0.18);
+}
+
+.screenshots-section .banner-navigation{
+	position: relative;
+	text-align:center;
+}
+
+.screenshots-section .banner-navigation .swiper-button-next,
+.screenshots-section .banner-navigation .swiper-button-prev{
+	position:relative;
+	font-size: 16px;
+    color: #2780ff;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+	background-image:none;
+    display: inline-block;
+    margin: 0px 15px 0px 15px;
+    background-color: #e7ecf2;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+@media(min-width:786px){
+	.screenshots-section .banner-navigation .swiper-button-next,
+	.screenshots-section .banner-navigation .swiper-button-prev{
+	    margin: 0px 15px 0px 15px;
+	}
+	.screenshots-section .banner-navigation{
+		margin-top: 0px;
+	}
+}
+@media(min-width:992px){
+	.screenshots-section .banner-navigation .swiper-button-next,
+	.screenshots-section .banner-navigation .swiper-button-prev{
+	    margin: 0px 15px 0px 15px;
+	}
+	.screenshots-section .banner-navigation{
+		margin-top: 0px;
+	}
+}
+.screenshots-section .banner-navigation .swiper-button-prev:hover, 
+.screenshots-section .banner-navigation .swiper-button-next:hover{
+	color: #fff;
+    background-color: #2780ff;
+}
+/* .screenshots-section{
+	position:relative;
+	padding-top:40px;
+	padding-bottom:100px;
+}
+
+.swiper-slider-area .container {
+	position: relative;
+}
+
+.swiper-wrapper{
+	height: 630px;
+	width: 320px;
+}
+
+.row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
+	position: relative;
+}
+
+.swiper-slide.swiper-slide-active {
+	border-radius: 35px;
+}
+
+.screen-mobile-image {
+	background-image: url('../image/iPhone_X.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	height: 645px;
+	left: calc(50% + 0.5px);
+	position: absolute;
+	top: 24px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 301px;
+	z-index: 2;
+
+	border-radius: 40px;
+}
+
+.swiper-slide.swiper-slide-active {
+	background-size: 100% 100%;
+}
+
+.swiper-wrapper {
+	padding: 30px 0 40px;
+}
+
+.swiper-slide.swiper-slide-next {
+	-webkit-box-shadow: 30px 0px 20px rgba(0, 0, 0, 0.18);
+	box-shadow: 30px 0px 20px rgba(0, 0, 0, 0.18);
+}
+
+.swiper-slide.swiper-slide-prev {
+	-webkit-box-shadow: -30px 0px 20px rgba(0, 0, 0, 0.18);
+	box-shadow: -30px 0px 20px rgba(0, 0, 0, 0.18);
+}
+
+.screenshots-section .banner-navigation{
+	position: relative;
+	text-align:center;
+	margin-top:0px;
+}
+
+.screenshots-section .banner-navigation .swiper-button-next,
+.screenshots-section .banner-navigation .swiper-button-prev{
+	position:relative;
+	font-size: 16px;
+    color: #373a5b;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+	background-image:none;
+    display: inline-block;
+    margin: 0px 15px 0px 15px;
+    background-color: #e7ecf2;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.screenshots-section .banner-navigation .swiper-button-prev:hover, 
+.screenshots-section .banner-navigation .swiper-button-next:hover{
+	color: #ffffff;
+    background-color: #373a5b;
+} */
